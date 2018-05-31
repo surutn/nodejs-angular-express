@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+    head
+        title=pageTitle
+        link(rel='stylesheet', href='/stylesheets/form.css')
+    body
+        img(src='/images/logo184x59.png', alt='logo')
+        h1=title
+        if isLoggedIn
+            h3 You are logged in.
+            form(name="logout", method="POST", action="logout")

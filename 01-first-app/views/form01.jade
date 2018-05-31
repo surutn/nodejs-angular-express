@@ -1,7 +1,25 @@
-html
+doctype html
+html(lang="en")
     head
-        title
+        title=pageTitle
+        link(rel='stylesheet', href='/stylesheets/form.css')
+        script(type='text/javascript').
+            if (foo){
+                bar(1+5)
+            }
     body
+        img(src='/images/logo184x59.png', alt='logo')
+        h1 #{title} - node template engine
+        #container.col  
+            if yourAreUsingJade
+                p You are amazing
+            else
+                p Get on it!
+        P.
+            Jade is a terse and simple
+            templating language with a strong focus on performance
+            and powerful features.
+
         block content
             h1= title
             p Welcome to #{title}

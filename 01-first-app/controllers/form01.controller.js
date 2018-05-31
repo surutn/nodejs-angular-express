@@ -2,6 +2,8 @@ var express = require('express');
 
 exports.render = function (req, res, next) {
   res.render('form01', {
-    title: 'My First Form'
+    pageTitle: 'Form 01',
+    title: 'Jade',
+    yourAreUsingJade:true
   });
 };
